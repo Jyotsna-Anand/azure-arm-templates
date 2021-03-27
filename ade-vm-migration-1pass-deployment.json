@@ -82,13 +82,13 @@
         "forceUpdateTag": "[parameters('sequenceVersion')]",
         "settings": {
           "KeyVaultURL": "[parameters('keyVaultURL')]",
-		  "KeyVaultResourceId": "[parameters('keyVaultResourceId')]",
+          "KeyVaultResourceId": "[parameters('keyVaultResourceId')]",
           "KeyEncryptionKeyURL": "[parameters('keyEncryptionKeyURL')]",
-		  "KekVaultResourceId": "[parameters('kekVaultResourceId')]",
+          "KekVaultResourceId": "[parameters('kekVaultResourceId')]",
           "KeyEncryptionAlgorithm": "[parameters('keyEncryptionAlgorithm')]",
           "VolumeType": "[parameters('volumeType')]",
           "EncryptionOperation": "[variables('encryptionOperation')]",
-		  "MigrateFlag": "Migrate"
+          "MigrateFlag": "Migrate"
         }
       }
     }
