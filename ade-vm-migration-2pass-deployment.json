@@ -78,8 +78,7 @@
     "extensionName": "AzureDiskEncryption",
     "extensionVersion": "1.1",
     "encryptionOperation": "EnableEncryption",
-    "keyEncryptionAlgorithm": "RSA-OAEP",
-    "updateVmUrl": "[concat('https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm/updatevm-kek','.json')]"
+    "keyEncryptionAlgorithm": "RSA-OAEP"
   },
   "resources": [
     {
@@ -96,13 +95,13 @@
         "settings": {
           "AADClientID": "[parameters('aadClientID')]",
           "KeyVaultURL": "[parameters('keyVaultURL')]",
-		  "KeyVaultResourceId": "[parameters('keyVaultResourceId')]",
+          "KeyVaultResourceId": "[parameters('keyVaultResourceId')]",
           "KeyEncryptionKeyURL": "[parameters('keyEncryptionKeyURL')]",
-		  "KekVaultResourceId": "[parameters('kekVaultResourceId')]",
+          "KekVaultResourceId": "[parameters('kekVaultResourceId')]",
           "KeyEncryptionAlgorithm": "[parameters('keyEncryptionAlgorithm')]",
           "VolumeType": "[parameters('volumeType')]",
           "EncryptionOperation": "[variables('encryptionOperation')]",
-		  "MigrateFlag": "Migrate"
+          "MigrateFlag": "Migrate"
         },
         "protectedSettings": {
           "AADClientSecret": "[parameters('aadClientSecret')]"
